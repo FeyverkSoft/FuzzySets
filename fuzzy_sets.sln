@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fuzzy_sets_GUI", "fuzzy_sets\fuzzy_sets_GUI.csproj", "{37206DE2-7D6B-4C72-A8D3-5952BDDCED60}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938} = {1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fuzzy_sets_dll", "fuzzy_sets_dll\Fuzzy_sets_dll.csproj", "{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37206DE2-7D6B-4C72-A8D3-5952BDDCED60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37206DE2-7D6B-4C72-A8D3-5952BDDCED60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37206DE2-7D6B-4C72-A8D3-5952BDDCED60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37206DE2-7D6B-4C72-A8D3-5952BDDCED60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA1A602-6E64-4C8C-9916-7DC9F5A3E938}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

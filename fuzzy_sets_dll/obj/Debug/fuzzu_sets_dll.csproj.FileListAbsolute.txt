@@ -1,0 +1,8 @@
+D:\programming\Нечёткие\fuzzy_sets\fuzzu_sets_dll\bin\Debug\Fuzzu_sets.xml
+D:\programming\Нечёткие\fuzzy_sets\fuzzu_sets_dll\bin\Debug\Fuzzu_sets.dll
+D:\programming\Нечёткие\fuzzy_sets\fuzzu_sets_dll\bin\Debug\Fuzzu_sets.pdb
+D:\programming\Нечёткие\fuzzy_sets\fuzzu_sets_dll\obj\Debug\Fuzzu_sets.dll
+D:\programming\Нечёткие\fuzzy_sets\fuzzu_sets_dll\obj\Debug\Fuzzu_sets.pdb
+D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Debug\Fuzzu_sets.dll
+D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Debug\Fuzzu_sets.pdb
+D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Debug\Fuzzu_sets.xml
