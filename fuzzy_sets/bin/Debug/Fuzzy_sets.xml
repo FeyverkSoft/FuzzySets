@@ -1,0 +1,604 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Fuzzy_sets</name>
+    </assembly>
+    <members>
+        <member name="T:Fuzzy_sets.sort`1">
+            <summary>
+            Класс сортирующий нечёткие множества
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.sort`1.qSort_from_Element(Fuzzy_sets.Fuzzy_sets{`0},System.Int32,System.Int32)">
+            <summary>
+            Сортировка нечёткого множества по значению элемента множества
+            </summary>
+            <param name="A">Нечёткое множество</param>
+            <param name="low">Начальный элемент</param>
+            <param name="high">Конечный элемент</param>
+        </member>
+        <member name="M:Fuzzy_sets.sort`1.qSort_from_Accessory_Function(Fuzzy_sets.Fuzzy_sets{`0},System.Int32,System.Int32)">
+            <summary>
+            Сортировка нечёткого множества по значению функции принадлежности элемента множеству
+            </summary>
+            <param name="A">Нечёткое множество</param>
+            <param name="low">Начальный элемент</param>
+            <param name="high">Конечный элемент</param>
+        </member>
+        <member name="T:Fuzzy_sets.Element_Fuzzy_sets`1">
+            <summary>
+            Элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="T:Fuzzy_sets.IElement_Fuzzy_sets`1">
+            <summary>
+            Интерфейс Элемента нечёткого множества
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.IElement_Fuzzy_sets`1.Equals(System.Object)">
+            <summary>
+            Переопределение базового сравнения
+            </summary>
+            <param name="obj">Объект для сравнения с текущим</param>
+            <returns>true если равны false иначе</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IElement_Fuzzy_sets`1.GetHashCode">
+            <summary>
+            Возвращает хеш-код
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Fuzzy_sets.IElement_Fuzzy_sets`1.ToString">
+            <summary>
+            Возвращает строковое представление данного элемента нечеткого множества
+            </summary>
+            <returns>Строковое предствавление элемента нечеткого множества</returns>
+        </member>
+        <member name="P:Fuzzy_sets.IElement_Fuzzy_sets`1.Accessory_Function">
+            <summary>
+            [read only] Возвращает значение функции принадлежности элемента к нечёткому множеству
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IElement_Fuzzy_sets`1.Con">
+            <summary>
+            Возвращает концентрированный элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IElement_Fuzzy_sets`1.Dil">
+            <summary>
+            Возвращает растянутый элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IElement_Fuzzy_sets`1.Element">
+            <summary>
+            [read only] Возвращает элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="F:Fuzzy_sets.Element_Fuzzy_sets`1.element">
+            <summary>
+            Элемент множества
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.#ctor(`0,System.Double)">
+            <summary>
+            Конструктор, принимает элемент множества, и функцию принадлежности
+            </summary>
+            <param name="Element">Элемент множества</param>
+            <param name="Accessory_Function">Функция принадлежности</param>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.GetHashCode">
+            <summary>
+            Возвращает хеш-код
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.Equals(System.Object)">
+            <summary>
+            Переопределение базового сравнения
+            </summary>
+            <param name="obj">Объект для сравнения с текущим</param>
+            <returns>true если равны false иначе</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.ToString">
+            <summary>
+            Возвращает строковое представление данного элемента нечеткого множества
+            </summary>
+            <returns>Строковое предствавление элемента нечеткого множества</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.op_Equality(Fuzzy_sets.Element_Fuzzy_sets{`0},Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Сравнивает 2 элемента множества, и если они РАВНЫ возвращает true в противном случае false 
+            </summary>
+            <param name="a">Первый элемент для сравнения</param>
+            <param name="b">Второй элемент для сравнения</param>
+            <returns>Если элементы равны true иначе false</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.op_Inequality(Fuzzy_sets.Element_Fuzzy_sets{`0},Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Сравнивает 2 элемента множества, и если они НЕ РАВНЫ возвращает true в противном случае false 
+            </summary>
+            <param name="a">Первый элемент для сравнения</param>
+            <param name="b">Второй элемент для сравнения</param>
+            <returns>Если элементы НЕ РАВНЫ true иначе false</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Element_Fuzzy_sets`1.op_LogicalNot(Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Отрицает элемент нечёткого множества
+            </summary>
+            <param name="a">Элемент для отрицания</param>
+            <returns>Возвращает обратный элемент данному</returns>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.Accessory_Function">
+            <summary>
+            [read only] Возвращает значение функции принадлежности элемента к нечёткому множеству
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.Element">
+            <summary>
+            [read only] Возвращает элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.Dil">
+            <summary>
+            Возвращает растянутый элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.Con">
+            <summary>
+            Возвращает концентрированный элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="T:Fuzzy_sets.Element_Fuzzy_sets`1.fuzzu">
+            <summary>
+            структура описывающая 1 элемент нечёткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.fuzzu.Element">
+            <summary>
+            Элемент нечеткого множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Element_Fuzzy_sets`1.fuzzu.Accessory_Function">
+            <summary>
+            функция принадлежности элемента, данному множеству (от 0 до 1)
+            </summary>
+        </member>
+        <member name="T:Fuzzy_sets.Fuzzy_sets`1">
+            <summary>
+            Класс описывающий нечеткое множество
+            </summary>
+        </member>
+        <member name="T:Fuzzy_sets.IFuzzy_sets`1">
+            <summary>
+            Интерфейс описывающий нечеткое множество
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Add(Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Добавляет в нечёткое множество новый элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Add(`0,System.Double)">
+            <summary>
+            Добавляет в нечёткое множество новый элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+            <param name="Accessory_Function">Значение функции принадлежества элемента к нечёткому множеству</param>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Association(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Объединение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат объединения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Delete(Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Удаляет из нечёткого множества указанный элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.DeleteAt(System.Int32)">
+            <summary>
+            Удаляет из нечёткого множества элемент по указанному индексу.
+            </summary>
+            <param name="Index">Индекс элемента нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Delete(`0,System.Double)">
+            <summary>
+            Удаляет из нечёткого множества указанный элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+            <param name="Accessory_Function">Значение функции принадлежества элемента к нечёткому множеству</param>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Equals(System.Object)">
+            <summary>
+            Переопределение базового сравнения
+            </summary>
+            <param name="obj">Объект для сравнения с текущим</param>
+            <returns>true если равны false иначе</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.GetEnumerator">
+            <summary>
+            Создает и возвращает "перечислитель", позволяющий перебирать в цикле все элементы списка.
+            </summary>
+            <returns>возвращает "перечислитель", позволяющий перебирать в цикле все элементы списка.</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.GetHashCode">
+            <summary>
+            Возвращает хеш-код
+            </summary>
+            <returns>Возвращает хеш-код нечеткого множества, уникальность не гарантируется</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Intersection(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Пересечение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат пересечения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.MoveNext">
+            <summary>
+            Сдвинуть счетчик на +1 и если индекс не превысил допустимый вернуть true
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.Reset">
+            <summary>
+            Сброс счетчика
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.IFuzzy_sets`1.ToString">
+            <summary>
+            Возвращает строковое представление нечеткого множества;
+            </summary>
+            <returns>Возвращает строковое представление нечеткого множества;</returns>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Name">
+            <summary>
+            [read only] Возвращает название множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Con">
+            <summary>
+            Возвращает концентрированное нечёткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Count">
+            <summary>
+            Получает количество элементов в нечётком множестве
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Current">
+            <summary>
+            Элемент на текущей позиции
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Dil">
+            <summary>
+            Возвращает растянутое нечёткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Get_Clear_Sets">
+            <summary>
+            Возвращает ближайшее чёткое множество к данному
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Index_of_Euclid">
+            <summary>
+            Вычисляет и возвращает относительный индекс Евклида для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Index_of_Euclid_Line">
+            <summary>
+            Вычисляет и возвращает линейный индекс Евклида для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Index_of_Hamming">
+            <summary>
+            Вычисляет и возвращает относительный индекс Хемминга для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Index_of_Hamming_Line">
+            <summary>
+            Вычисляет и возвращает Линейный индекс Хемминга для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Sort_from_Accessory_Function">
+            <summary>
+            Возвращает отсортированное по Функции принадлежности  в порядке возрастания нечеткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Sort_from_Element">
+            <summary>
+            Возвращает отсортированное по Элементу в порядке возрастания принадлежности нечеткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.IFuzzy_sets`1.Item(System.Int32)">
+            <summary>
+            [Желательно Read only] Возвращает или задаёт элемент по указанному индексу
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Fuzzy_sets.Fuzzy_sets`1.Mass">
+            <summary>
+            Список элементов нечеткого множества
+            </summary>
+        </member>
+        <member name="F:Fuzzy_sets.Fuzzy_sets`1.name">
+            <summary>
+            Название множества если нужно
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.GetEnumerator">
+            <summary>
+            Создает и возвращает "перечислитель", позволяющий перебирать в цикле все элементы списка.
+            </summary>
+            <returns>возвращает "перечислитель", позволяющий перебирать в цикле все элементы списка.</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.MoveNext">
+            <summary>
+            Сдвинуть счетчик на +1 и если индекс не превысил допустимый вернуть true
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Reset">
+            <summary>
+            Сброс счетчика
+            </summary>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.#ctor(System.String)">
+            <summary>
+            Конструктор нечеткого множества
+            </summary>
+            <param name="Name">Название множества, по умолчанию пустое</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.#ctor(Fuzzy_sets.Fuzzy_sets{`0},System.String)">
+            <summary>
+            Конструктор нечеткого множества
+            </summary>
+            <param name="Name">Название множества, по умолчанию пустое</param>
+            <param name="Sets">Нечеткое множество на основе которого будет построенно данное множество</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.#ctor(System.Collections.Generic.List{Fuzzy_sets.Element_Fuzzy_sets{`0}},System.String)">
+            <summary>
+            Конструктор нечеткого множества
+            </summary>
+            <param name="Name">Название множества, по умолчанию пустое</param>
+            <param name="List_Element_Sets">Список элементов нечеткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.#ctor(Fuzzy_sets.Element_Fuzzy_sets{`0}[],System.String)">
+            <summary>
+            Конструктор нечеткого множества
+            </summary>
+            <param name="Name">Название множества, по умолчанию пустое</param>
+            <param name="List_Element_Sets">Массив элементов нечеткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Add(Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Добавляет в нечёткое множество новый элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Add(`0,System.Double)">
+            <summary>
+            Добавляет в нечёткое множество новый элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+            <param name="Accessory_Function">Значение функции принадлежества элемента к нечёткому множеству</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Delete(Fuzzy_sets.Element_Fuzzy_sets{`0})">
+            <summary>
+            Удаляет из нечёткого множества указанный элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Delete(`0,System.Double)">
+            <summary>
+            Удаляет из нечёткого множества указанный элемент.
+            </summary>
+            <param name="Element">Элемент нечёткого множества</param>
+            <param name="Accessory_Function">Значение функции принадлежества элемента к нечёткому множеству</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.DeleteAt(System.Int32)">
+            <summary>
+            Удаляет из нечёткого множества элемент по указанному индексу.
+            </summary>
+            <param name="Index">Индекс элемента нечёткого множества</param>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.GetHashCode">
+            <summary>
+            Возвращает хеш-код
+            </summary>
+            <returns>Возвращает хеш-код нечеткого множества, уникальность не гарантируется</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Equals(System.Object)">
+            <summary>
+            Переопределение базового сравнения
+            </summary>
+            <param name="obj">Объект для сравнения с текущим</param>
+            <returns>true если равны false иначе</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.ToString">
+            <summary>
+            Возвращает строковое представление нечеткого множества;
+            </summary>
+            <returns>Возвращает строковое представление нечеткого множества;</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.op_Equality(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Сравнивает 2 нечётких множества, и если они РАВНЫ возвращает true в противном случае false 
+            </summary>
+            <param name="a">Первое нечёткое множество</param>
+            <param name="b">Второе нечёткое множество</param>
+            <returns>Если элементы РАВНЫ true иначе false</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.op_Inequality(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Сравнивает 2 нечётких множества, и если они НЕ РАВНЫ возвращает true в противном случае false 
+            </summary>
+            <param name="a">Первое нечёткое множество</param>
+            <param name="b">Второе нечёткое множество</param>
+            <returns>Если элементы НЕ РАВНЫ true иначе false</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.op_LogicalNot(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Отрицает нечёткое множество
+            </summary>
+            <param name="a">Множество для отрицания</param>
+            <returns>Возвращает множество обратное данному</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.op_Addition(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Объединение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат объединения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.op_Division(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Пересечение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат пересечения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Association(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Объединение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат объединения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Intersection(Fuzzy_sets.Fuzzy_sets{`0},Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Пересечение 2х нечетких множеств
+            </summary>
+            <param name="a">Первое множество</param>
+            <param name="b">Второе множество</param>
+            <returns>Возвращает результат пересечения 2х множеств</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Get_Concentration(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает концентрацию указанного множества. Рекомендуется использовать Свойство Con у самого множества, а не данную функцию
+            </summary>
+            <param name="a">Множество для взятия концентрации.</param>
+            <returns>Возвращает концентрацию множества </returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Get_Dilation(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает растяжение указанного множества. Рекомендуется использовать Свойство Dil у самого множества, а не данную функцию
+            </summary>
+            <param name="a">Множество для взятия Растяжения.</param>
+            <returns>Возвращает растяжение множества </returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Get_Index_Euclid(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает индекс Евклида указанного множества. Рекомендуется использовать Свойство Index_of_Euclid у самого множества, а не данную функцию
+            </summary>
+            <param name="a">Множество для вычисления индекса Евклида.</param>
+            <returns>Возвращает индекс Евклида для заданного множества</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Get_Index_Hamming(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает индекс Хемминга указанного множества. Рекомендуется использовать Свойство Index_of_Hamming у самого множества, а не данную функцию
+            </summary>
+            <param name="a">Множество для вычисления индекса Хемминга.</param>
+            <returns>Возвращает индекс Хеммигда для заданного множества </returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Sort_Accessory_Function(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает отсортированное нечеткое множество в порядке возрастания функции нечеткости.
+            </summary>
+            <param name="a">Множество для сортировки.</param>
+            <returns>Возвращает отсортированное нечеткое множество в порядке возрастания функции нечеткости.</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Sort_Element(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает отсортированное нечеткое множество в порядке возрастания элементов нечеткого множества.
+            </summary>
+            <param name="a">Множество для сортировки.</param>
+            <returns>Возвращает отсортированное нечеткое множество в порядке возрастания элементов нечеткого множества..</returns>
+        </member>
+        <member name="M:Fuzzy_sets.Fuzzy_sets`1.Return_Clear_Sets(Fuzzy_sets.Fuzzy_sets{`0})">
+            <summary>
+            Возвращает ближайшее четкое множество к указанному не чёткому
+            </summary>
+            <param name="a">Множество для взятия четкого множества.</param>
+            <returns>Возвращает ближайшее четкое множество к указанному не чёткому</returns>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Current">
+            <summary>
+            Элемент на текущей позиции
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Name">
+            <summary>
+            [read only] Возвращает название множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Item(System.Int32)">
+            <summary>
+            [Желательно Read only] Возвращает или задаёт элемент по указанному индексу
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Count">
+            <summary>
+            Получает количество элементов в нечётком множестве
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Dil">
+            <summary>
+            Возвращает растянутое нечёткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Con">
+            <summary>
+            Возвращает концентрированное нечёткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Index_of_Euclid">
+            <summary>
+            Вычисляет и возвращает относительный индекс Евклида для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Index_of_Euclid_Line">
+            <summary>
+            Вычисляет и возвращает линейный индекс Евклида для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Index_of_Hamming">
+            <summary>
+            Вычисляет и возвращает относительный индекс Хемминга для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Index_of_Hamming_Line">
+            <summary>
+            Вычисляет и возвращает Линейный индекс Хемминга для данного множества
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Sort_from_Accessory_Function">
+            <summary>
+            Возвращает отсортированное по Функции принадлежности  в порядке возрастания нечеткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Sort_from_Element">
+            <summary>
+            Возвращает отсортированное по Элементу в порядке возрастания принадлежности нечеткое множество
+            </summary>
+        </member>
+        <member name="P:Fuzzy_sets.Fuzzy_sets`1.Get_Clear_Sets">
+            <summary>
+            Возвращает ближайшее чёткое множество к данному
+            </summary>
+        </member>
+    </members>
+</doc>

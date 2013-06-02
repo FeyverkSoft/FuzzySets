@@ -23,21 +23,21 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="Fuzzy_sets.Fuzzy_sets&lt;Tip_Element&gt;" BaseTypeListCollapsed="true">
-    <Position X="4" Y="0.75" Width="1.5" />
+    <Position X="4" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAIACAgAAFAABBAkyBSgIAZMgAEEAIAAoAQAAECAAyA=</HashCode>
+      <HashCode>CAIACAgAAFAABBAkyBSgIAZMgEEEAIAAoAQAAECCAyA=</HashCode>
       <FileName>Fuzzy_sets.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="Fuzzy_sets.IFuzzy_sets&lt;Tip_Element&gt;">
+  <Interface Name="Fuzzy_sets.IFuzzy_sets&lt;Tip_Element&gt;" Collapsed="true">
     <Position X="5.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>CAIACAAAAFAABBAkiACAAARMAAEAAIAAIAAAAAAAAQA=</HashCode>
+      <HashCode>CAIACAAAAFAABBAkiACAAARMAEEAAIAAIAAAAAACAQA=</HashCode>
       <FileName>IFuzzy_sets.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Fuzzy_sets.IElement_Fuzzy_sets&lt;Tip_Element&gt;">
+  <Interface Name="Fuzzy_sets.IElement_Fuzzy_sets&lt;Tip_Element&gt;" Collapsed="true">
     <Position X="2.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAkgAoAAAAAAAEAAIAAAAAAAAAAAAA=</HashCode>

@@ -75,7 +75,7 @@ namespace Fuzzy_sets
     /// <summary>
     /// Элемент нечёткого множества
     /// </summary>
-    public class Element_Fuzzy_sets<Tip_Element> : Fuzzy_sets.IElement_Fuzzy_sets<Tip_Element> where Tip_Element : System.IComparable<Tip_Element>, IEquatable<Tip_Element>
+    public class Element_Fuzzy_sets<Tip_Element> : IEquatable<Object>, Fuzzy_sets.IElement_Fuzzy_sets<Tip_Element> where Tip_Element : System.IComparable<Tip_Element>, IEquatable<Tip_Element>
     {
         #region Переменные класса
         /// <summary>
@@ -242,7 +242,7 @@ namespace Fuzzy_sets
     /// <summary>
     /// Класс описывающий нечеткое множество
     /// </summary>
-    public class Fuzzy_sets<Tip_Element> : IEnumerator, IEnumerable, Fuzzy_sets.IFuzzy_sets<Tip_Element> where Tip_Element : System.IComparable<Tip_Element>, IEquatable<Tip_Element>
+    public class Fuzzy_sets<Tip_Element> : IEnumerator, IEnumerable, IEquatable<Object>, Fuzzy_sets.IFuzzy_sets<Tip_Element> where Tip_Element : System.IComparable<Tip_Element>, IEquatable<Tip_Element>
     {
         #region Переменные класса
         /// <summary>

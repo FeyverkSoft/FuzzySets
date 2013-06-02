@@ -3,3 +3,8 @@ D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.dll
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.pdb
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets_dll\obj\Release\Fuzzy_sets.dll
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets_dll\obj\Release\Fuzzy_sets.pdb
+E:\Нечёткие\fuzzy_sets\fuzzy_sets_dll\obj\Release\Fuzzy_sets.dll
+E:\Нечёткие\fuzzy_sets\fuzzy_sets_dll\obj\Release\Fuzzy_sets.pdb
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.XML
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.dll
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.pdb

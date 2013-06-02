@@ -9,3 +9,16 @@ D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.Graphics1.resources
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.Properties.Resources.resources
 D:\programming\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.csproj.GenerateResource.Cache
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\fuzzy_sets_GUI.exe.config
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.exe
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.pdb
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\fuzzy_sets_GUI.exe
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\fuzzy_sets_GUI.pdb
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.AboutBox1.resources
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.Form1.resources
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.Graphics1.resources
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.Properties.Resources.resources
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.csproj.GenerateResource.Cache
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\obj\Release\fuzzy_sets_GUI.csprojResolveAssemblyReference.cache
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.pdb
+E:\Нечёткие\fuzzy_sets\fuzzy_sets\bin\Release\Fuzzy_sets.xml
